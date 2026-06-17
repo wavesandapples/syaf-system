@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSC577 Course Details</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 20px;
+      background: linear-gradient(to right, pink, lightblue);
+      color: #333;
+    }
+    /* Header */
+    header {
+      background: #ff69b4; /* pink */
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo img {
+      height: 80px;
+      width: auto;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background: #ffccff;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #ff69b4;
+      margin: 20px 0;
+    }
+    table {
+      width: 60%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid hotpink;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background: #ffe4f0;
+      width: 30%;
+    }
+    .back-btn {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: hotpink;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .back-btn:hover {
+      background: #ffccff;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="home.html" class="logo"><img src="images/logo3.png" alt="Syaf's logo"></a>
+    <nav>
+      <ul>
+        <li><a href="biography.html">Biography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="timetable.html">Time Table</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="login.html">Admin Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>LCC500 Course Details</h1>
+
+  <!-- Course Information Table -->
+  <table>
+    <tr>
+      <th>Course Code</th>
+      <td>LCC500</td>
+    </tr>
+    <tr>
+      <th>Course Name</th>
+      <td>ENGLISH FOR WORKPLACE COMMUNICATION</td>
+    </tr>
+    <tr>
+      <th>Lecturer</th>
+      <td>DR DIYANA YUSOF</td>
+    </tr>
+  </table>
+
+  <!-- Back Button -->
+  <a href="timetable.html" class="back-btn">← Back to Timetable</a>
+</body>
+</html>

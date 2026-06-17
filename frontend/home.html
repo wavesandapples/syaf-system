@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Syaf's Page</title>
+  <style>
+    /* General Theme */
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      background: linear-gradient(to right, pink, yellow, lightblue);
+      color: #333;
+    }
+
+         /* Header */
+    header {
+      background: #ff69b4; /* pink */
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo img {
+      height: 80px;
+      width: auto;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background: #ffccff;
+      color: #333;
+    }
+
+    /* Welcome Section */
+    .welcome {
+      text-align: center;
+      padding: 50px;
+      background: rgba(255, 255, 255, 0.8);
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    /* Slider container */
+    .slider {
+      width: 100%;
+      max-width: 700px;
+      margin: 30px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .slides {
+      display: flex;
+      width: 400%;
+      animation: slide 16s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 600px;       /* neat fixed height */
+      object-fit: cover;   /* crop edges nicely */
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .slides img { height: 180px; }
+    }
+
+    @media (max-width: 480px) {
+      .slides img { height: 140px; }
+    }
+
+    /* Social Media */
+    .social {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .social img {
+      width: 40px;
+      margin: 10px;
+      transition: transform 0.3s;
+    }
+
+    .social img:hover {
+      transform: scale(1.2);
+    }
+
+    /* Footer */
+    footer {
+      background: hotpink;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Form Styling */
+    .form-container {
+      width: 50%;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #ff69b4; /* pink */
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    td {
+      padding: 8px;
+    }
+
+    input {
+      width: 95%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 8px 12px;
+      background: #1e90ff; /* blue */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ffcc00; /* yellow */
+      color: #333;
+    }
+
+    .error {
+      color: red;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* Slider animation */
+    @keyframes slide {
+      0%   { margin-left: 0; }
+      20%  { margin-left: 0; }
+      25%  { margin-left: -100%; }
+      45%  { margin-left: -100%; }
+      50%  { margin-left: -200%; }
+      70%  { margin-left: -200%; }
+      75%  { margin-left: -300%; }
+      95%  { margin-left: -300%; }
+      100% { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="home.html" class="logo"><img src="images/logo3.png" alt="Syaf's logo"></a>
+    <nav>
+      <ul>
+        <li><a href="biography.html">Biography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="timetable.html">Time Table</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="login.html">Admin Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Welcome Section -->
+  <section class="welcome">
+    <h1>Welcome to Syaf ’s Page!</h1>
+    <p>This is my personal space where I share my biography, resume, timetable, gallery, and more</p>
+    <p>Explore and enjoy!</p>
+  </section>
+
+  <!-- Gallery Slider -->
+  <section class="slider">
+    <div class="slides">
+      <img src="images/pic2.jpg" alt="Gallery Image 1">
+      <img src="images/gallery/pic10.jpg" alt="Gallery Image 2">
+      <img src="images/gallery/pic9.jpg" alt="Gallery Image 3">
+      <img src="images/pic3.jpg" alt="Gallery Image 4">
+    </div>
+  </section>
+
+  <!-- Social Media -->
+  <section class="social">
+    <h2>Connect with Me</h2>
+    <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="https://instagram.com"><img src="images/instagram.jpg" alt="Instagram"></a>
+    <a href="https://x.com"><img src="images/x.png" alt="x"></a>
+    <a href="https://youtube.com"><img src="images/youtube.png" alt="YouTube"></a>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Syaf’s Page | Disclaimer & Copyright</p>
+  </footer>
+</body>
+</html>

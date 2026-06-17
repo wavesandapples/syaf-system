@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Class Timetable</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 20px;
+      background: linear-gradient(to right, pink, lightblue);
+      color: #333;
+    }
+    /* Header */
+    header {
+      background: #ff69b4; /* pink */
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo img {
+      height: 80px;
+      width: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid hotpink;
+      padding: 10px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    th {
+      background: #ffe4f0;
+    }
+    td {
+      background: #fff;
+    }
+    /* Navigation styling */
+    nav ul {
+      list-style: none;       /* remove bullets */
+      display: flex;          /* horizontal layout */
+      gap: 20px;              /* spacing between links */
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;           /* white text */
+      text-decoration: none;  /* remove underline */
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #ffccff;    /* light pink hover */
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="home.html" class="logo"><img src="images/logo3.png" alt="Syaf's logo"></a>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="biography.html">Biography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="timetable.html">Time Table</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="login.html">Admin Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>My Class Timetable</h1>
+
+  <table>
+    <tr>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+    <tr>
+      <td>08:00 AM – 10:00 AM</td>
+      <td></td>
+      <td></td>
+      <td><a href= "CSC577.html">CSC577</a> – DK200A</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>09:00 AM – 11:00 AM</td>
+      <td><a href= "CSC577.html">CSC577</a> – Zeta MK2</td>
+      <td></td>
+      <td></td>
+      <td><a href= "CSC508.html">CSC508</a> – Zeta MK3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10:00 AM – 12:00 PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href= "CSC584.html">CSC584</a>– Zeta MK2</td>
+    </tr>
+    <tr>
+      <td>11:00 AM – 01:00 PM</td>
+      <td><a href= "CSC569.html">CSC569</a>– Zeta BK3</td>
+      <td><a href= "CSC584.html">CSC584</a>– Zeta MK1</td>
+      <td></td>
+      <td><a href= "CSC574.html">CSC574</a> – Zeta MK2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>02:00 PM – 04:00 PM</td>
+      <td><a href= "CSC574.html">CSC574</a> – Zeta MK3</td>
+      <td><a href= "CSC508.html">CSC508</a> – Zeta BK3</td>
+      <td><a href= "CSC569.html">CSC569</a> – FSKM BK07</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>03:00 PM – 05:00 PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href= "LCC500.html">LCC500</a> – FSKM BK07</td>
+    </tr>
+    <tr>
+      <td>05:00 PM – 07:00 PM</td>
+      <td></td>
+      <td></td>
+      <td><a href= "TMC451.html">TMC451</a> – Zeta BK5</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+</html>

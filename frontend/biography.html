@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Biography - Syaf's Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: linear-gradient(to bottom right, #f9c5d1, #f6f0a0, #a0e7e5, #b4f8c8);
+      margin: 0;
+      padding: 0;
+    }
+        /* Header */
+    header {
+      background: #ff69b4; /* pink */
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo img {
+      height: 80px;
+      width: auto;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background: #ffccff;
+      color: #333;
+    }
+
+    .bio-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: linear-gradient(to right, pink, lightblue);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .bio-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .bio-container img {
+      display: block;
+      margin: 0 auto 20px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #f9c5d1;
+    }
+    .bio-container p {
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 15px;
+    }
+    .resume-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .resume-section {
+      margin-bottom: 25px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .resume-section h3 {
+      margin-top: 0;
+      color: #333;
+      border-bottom: 2px solid #f9c5d1;
+      padding-bottom: 5px;
+    }
+    .resume-section p {
+      margin: 8px 0;
+      color: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: hotpink;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="home.html" class="logo"><img src="images/logo3.png" alt="Syaf's logo"></a>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="biography.html">Biography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="timetable.html">Time Table</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="login.html"> AdminLogin</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <div class="bio-container">
+    <img src="images/pic2.jpg" alt="Syaf's Photo">
+    <h2>Nor Syafiqa Binti Muhamad</h2>
+    <p>Hello! I’m Syaf, a Computer Science student and Maybank Group Scholar 2025 from Kuantan, Pahang.</p>
+    <p>I enjoy coding, reading, and trying out new food. Cats and lion cubs are my favorite animals, and I absolutely love movie franchises, especially Avatar Franchise by James Cameron</p>
+    <p>One of my proudest achievements is building web projects like this personal page. My dream is to travel the world, starting with Japan to try authentic ramen.</p>
+    <p>My motto is: <strong>"No matter how tired you are, Do it tired"</strong></p>
+    <p>Through this biography, I hope you get to know me better: both my academic journey and my personal passions.</p>
+  </div>
+
+  <div class="resume-container">
+    <!-- Personal Information -->
+    <div class="resume-section">
+      <h3>Personal Information</h3>
+      <p><strong>Name:</strong> Nor Syafiqa Binti Muhamad</p>
+      <p><strong>Gender:</strong> Female</p>
+      <p><strong>Date of Birth:</strong> 29th July 2005</p>
+      <p><strong>Email:</strong> norsyafiqam@gmail.com</p>
+      <p><strong>Phone Number:</strong> 014-9379126</p>
+      <p><strong>Hometown:</strong> Kuantan, Pahang</p>
+    </div>
+
+    <!-- Education -->
+    <div class="resume-section">
+      <h3>Education</h3>
+      <P><strong>Primary School:</strong> SK Assunta Convent</P>
+      <p><strong>Secondary School:</strong> SMK Abdul Rahman Talib</p>
+      <p><strong>Degree:</strong> Bachelor of Computer Science (UiTM Tapah)</p>
+      <p><strong>Scholarship:</strong> Maybank Group Scholar (2025)</p>
+      <p><strong>CGPA:</strong> 3.82 (as of Apr 2026)</p>
+    </div>
+
+  <footer>
+    <p>© 2026 Syaf’s Page | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

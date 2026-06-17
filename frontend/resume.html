@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 20px;
+      background:  linear-gradient(to right, pink, lightblue);
+      color: #333;
+    }
+        /* Header */
+    header {
+      background: #ff69b4; /* pink */
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo img {
+      height: 80px;
+      width: auto;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background: #ffccff;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+      margin: 20px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse; /* neat table lines */
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid hotpink;
+      padding: 10px;             /* consistent padding */
+      vertical-align: top;
+      text-align: left;          /* consistent alignment */
+    }
+    th {
+      background: #ffe4f0;
+      width: 25%;                /* fixed header column width */
+    }
+    ul, ol {
+      margin: 5px 0 5px 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="home.html" class="logo"><img src="images/logo3.png" alt="Syaf's logo"></a>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="biography.html">Biography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="timetable.html">Time Table</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="login.html">Admin Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Resume</h1>
+
+  <!-- Contact -->
+  <table>
+    <tr>
+      <th>Contact</th>
+      <td>
+        <ul>
+          <li>Phone: 014-9379126</li>
+          <li>Email: norsyafiqam@gmail.com</li>
+          <li>Location: Kuantan, Pahang</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <!-- About Me -->
+  <table>
+    <tr>
+      <th>About Me</th>
+      <td>
+        A highly motivated and disciplined Bachelor of Computer Science student at Universiti Teknologi MARA (UITM) Tapah Campus.
+        Strong interest in technology, leadership, and continuous growth. Active in co-curricular programmes and student initiatives.
+      </td>
+    </tr>
+  </table>
+
+  <!-- Skills -->
+  <table>
+    <tr>
+      <th>Skills</th>
+      <td>
+        <ul>
+          <li><strong>Technical Skills:</strong>
+            <ol>
+              <li>Java, C++, Python</li>
+              <li>Microsoft Office (Word, Excel, PowerPoint, Access)</li>
+              <li>Basic Arduino Programming</li>
+              <li>Basic HTML & CSS</li>
+            </ol>
+          </li>
+          <li><strong>Soft Skills:</strong>
+            <ol>
+              <li>Leadership & Committee Management</li>
+              <li>Report Writing & Documentation</li>
+              <li>Time Management & Task Prioritization</li>
+            </ol>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Academic History -->
+  <table>
+    <tr>
+      <th>Academic History</th>
+      <td>
+        <ul>
+          <li>Bachelor of Computer Science (Hons.), UITM Tapah (2024–Present) – CGPA: 3.86</li>
+          <li>Foundation in Engineering, UITM Dengkil (2023–2024) – CGPA: 3.56</li>
+          <li>SPM, SMK Abdul Rahman Talib, Kuantan (2018–2023) – 5A+ 2A 1A- 1B</li>
+          <li>UPSR, SK Assunta Convent, Kuantan (2012–2017) – 6A</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Co-Curricular -->
+  <table>
+    <tr>
+      <th>Co-Curricular Involvement</th>
+      <td>
+        <ul>
+          <li><strong>Degree Level:</strong>
+            <ol>
+              <li>Secretary, BASCO (2025–2026)</li>
+              <li>Secretariat Secretary, BASCO (2024–2025)</li>
+              <li>Managed documentation for Hackathon, DevCon, BASCO Family Day</li>
+            </ol>
+          </li>
+          <li><strong>Foundation Level:</strong>
+            <ol>
+              <li>Secretary, Community Service Club (2023–2024)</li>
+            </ol>
+          </li>
+          <li><strong>Secondary School Level:</strong>
+            <ol>
+              <li>President, Red Crescent Society (2022–2023)</li>
+              <li>President, Chess Club (2022–2023)</li>
+            </ol>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Achievements -->
+  <table>
+    <tr>
+      <th>Achievements</th>
+      <td>
+        <ul>
+          <li>Dean’s List Award, Semester 3 Bachelor of Computer Science (2026)</li>
+          <li>Dean’s List Award, Semester 2 Bachelor of Computer Science (2025)</li>
+          <li>Dean’s List Award, Semester 1 Bachelor of Computer Science (2024)</li>
+          <li>Elected Secretary, BASCO (2025)</li>
+          <li>2nd Place, Arduino Showcase Competition, UITM Dengkil (2023)</li>
+          <li>Lead Organizer, "Sing-Along for a Cause" Charity Event (2023)</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup Form</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4, #a1c4fd);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .signup-box {
+      background: rgba(255,255,255,0.95);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      width: 600px;
+    }
+    h1 {
+      text-align: center;
+      color: #4a148c;
+      margin-bottom: 20px;
+    }
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+    .form-row label {
+      flex: 1;
+      font-weight: bold;
+      color: #333;
+      margin-right: 10px;
+    }
+    .form-row input, .form-row select {
+      flex: 2;
+      padding: 8px;
+      border: none;
+      border-radius: 6px;
+      background: #fce4ec;
+      color: #333;
+    }
+    .form-row input[type="radio"], .form-row input[type="checkbox"] {
+      flex: unset;
+      text-align: left;
+      margin-right: 2px;
+    }
+    .actions {
+      text-align: center;
+      margin-top: 20px;
+    }
+    input[type="submit"], input[type="reset"], button {
+      background: hotpink;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 5px;
+      transition: background 0.3s;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background: purple;
+    }
+    .cancel-btn {
+      background: mediumpurple;
+    }
+    .cancel-btn:hover {
+      background: purple;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-box">
+    <h1>Signup Form</h1>
+    <form action="../backend/add.php" method="POST">
+
+      <div class="form-row">
+        <label>First Name</label>
+        <input type="text" name="fname" required>
+      </div>
+      <div class="form-row">
+        <label>Last Name</label>
+        <input type="text" name="lname" required>
+      </div>
+      <div class="form-row">
+        <label>Gender</label>
+        <div>
+          <input type="radio" name="gender" value="Male" required> Male
+          <input type="radio" name="gender" value="Female"> Female
+        </div>
+      </div>
+      <div class="form-row">
+        <label>Address</label>
+        <input type="text" name="address">
+      </div>
+      <div class="form-row">
+        <label>State</label>
+        <select name="state" required>
+          <option value="">--Select State--</option>
+          <option value="Selangor">Selangor</option>
+          <option value="Perak">Perak</option>
+          <option value="Pahang">Pahang</option>
+          <option value="Johor">Johor</option>
+          <option value="Penang">Penang</option>
+          <option value="Sabah">Sabah</option>
+          <option value="Sarawak">Sarawak</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>Phone Number</label>
+        <input type="text" name="phonenum">
+      </div>
+      <div class="form-row">
+        <label>Email</label>
+        <input type="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label>Educational Background</label>
+        <div>
+          <input type="checkbox" name="edu[]" value="SPM"> SPM
+          <input type="checkbox" name="edu[]" value="Diploma"> Diploma
+          <input type="checkbox" name="edu[]" value="Degree"> Degree
+          <input type="checkbox" name="edu[]" value="Master"> Master
+          <input type="checkbox" name="edu[]" value="PhD"> PhD
+        </div>
+      </div>
+      <div class="form-row">
+        <label>Username</label>
+        <input type="text" name="username" required>
+      </div>
+      <div class="form-row">
+        <label>Password</label>
+        <input type="password" name="pass" required>
+      </div>
+      <div class="form-row">
+        <label>Re-enter Password</label>
+        <input type="password" name="repass" required>
+      </div>
+      <div class="actions">
+        <input type="submit" value="Sign Up">
+        <input type="reset" value="Clear">
+        <button type="button" class="cancel-btn" onclick="window.location='home.html'">Cancel</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

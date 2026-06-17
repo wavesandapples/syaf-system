@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 20px;
+      background: linear-gradient(to right, pink, lightblue);
+      color: #333;
+    }
+    /* Header */
+    header {
+      background: #ff69b4; /* pink */
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo img {
+      height: 80px;
+      width: auto;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background: #ffccff;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #ff69b4;
+      margin: 20px 0;
+    }
+    .downloads {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+    .downloads h2 {
+      color: #ff69b4;
+      margin-bottom: 15px;
+    }
+    .downloads a {
+      display: block;
+      margin: 10px 0;
+      padding: 12px;
+      background: hotpink;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .downloads a:hover {
+      background: #ffccff;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="home.html" class="logo"><img src="images/logo3.png" alt="Syaf's logo"></a>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="biography.html">Biography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="timetable.html">Time Table</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="login.html">Admin Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Download Section</h1>
+
+  <div class="downloads">
+    <h2>Available Files</h2>
+    <!-- Resume PDF -->
+    <a href="pdf/NorSyafiqaMuhamad_CV.pdf" download>📄 Download Resume (PDF)</a>
+    <!-- Timetable PDF -->
+    <a href="pdf/calendaracademic.pdf" download>📄 Download Academic Calendar (PDF)</a>
+  </div>
+</body>
+</html>
