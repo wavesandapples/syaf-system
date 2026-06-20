@@ -44,11 +44,6 @@
       background: #fce4ec;
       color: #333;
     }
-    .form-row input[type="radio"], .form-row input[type="checkbox"] {
-      flex: unset;
-      text-align: left;
-      margin-right: 2px;
-    }
     .actions {
       text-align: center;
       margin-top: 20px;
@@ -67,17 +62,11 @@
     input[type="submit"]:hover, input[type="reset"]:hover {
       background: purple;
     }
-    .cancel-btn {
-      background: mediumpurple;
-    }
-    .cancel-btn:hover {
-      background: purple;
-    }
   </style>
 </head>
 <body>
   <h2>Signup</h2>
-  <form action="http://syafiqamuhamad.free.nf/add.php" method="POST">
+  <form action="http://syafiqamuhamad.free.nf/add.php" method="POST" onsubmit="return validatePassword()">
     <label>First Name:</label>
     <input type="text" name="fname" required><br><br>
 
@@ -113,9 +102,14 @@
     <input type="text" name="username" required><br><br>
 
     <label>Password:</label>
-    <input type="password" name="password" required><br><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label>Confirm Password:</label>
+    <input type="password" id="confirm_password" required><br><br>
 
     <button type="submit">Sign Up</button>
   </form>
+
+
 </body>
 </html>
